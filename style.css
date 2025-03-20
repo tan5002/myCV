@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.my-name{
+    font-size: 2.5rem;
+    color: #330867;
+}
+.hand{
+    width: 30%;
+    animation: rotateHand 2s linear infinite;
+}
+
+@keyframes rotateHand {
+    0% { transform: rotate(0deg); }
+    25% {transform: rotate(40deg);}
+    50% { transform: rotate(40deg); }
+    100% { transform: rotate(0deg); }
+
+}
+.box{
+    display: none;
+}
+#home {
+    display: block;
+}
+.icon:hover{
+    background-color: #fff;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+  }
+section {
+    #home {
+        .container {
+            .row {
+                .col {
+                    .my-name {
+                        h1 {
+                            font-size: 4rem;
+                            span {
+                                color: brown;
+                                font-size: 4rem;
+                            }
+                        }
+                        span {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+            .g-0 {
+                .col-sm-6 {
+                    .about-me {
+                        color: aliceblue;
+                        h1 {
+                            font-size: 4rem;
+                        }
+                        p {
+                            font-size: 1.3rem;
+                            span {
+                                color: yellow;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #about {
+        .container {
+            .row {
+                .col {
+                    .about {
+                        color: aliceblue;
+                        h1 {
+                            font-size: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+    
+}
