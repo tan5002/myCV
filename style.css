@@ -17,11 +17,6 @@ img {
 body {
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
-
-.my-name{
-    font-size: 2.5rem;
-    color: #330867;
-}
 .hand{
     width: 30%;
     animation: rotateHand 2s linear infinite;
@@ -99,6 +94,9 @@ section {
                 }
             }
         }
+    }
+    #project {
+        margin-top: 100px;
     }
 }
 

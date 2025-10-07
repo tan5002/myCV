@@ -10,7 +10,8 @@ list.forEach((item, index) => {
         });
         item.style.color = "white";
         item.style.backgroundImage = "linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)";
-        listBox.forEach((box, boxIndex) => {
+        item.style.borderRadius = "10px";
+        listBox.forEach((box, boxIndex) => {    
             box.style.display = boxIndex === index ? "block" : "none";
         });
     });
