@@ -45,6 +45,7 @@ body {
     background: #fff;
   }
 section {
+    margin-top: 200px;
     #home {
         .container {
             .row {
@@ -100,7 +101,7 @@ section {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .navbar-nav {
         flex-direction: column;
         text-align: center;
@@ -109,5 +110,7 @@ section {
     .navbar-toggler {
         border: none;
     }
-    
+   
 }
+
+
